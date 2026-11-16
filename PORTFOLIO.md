@@ -6,12 +6,12 @@
 
 | プロジェクト | 概要 | 公開状態 | 詳細 |
 |---|---|---|---|
-| QR勤怠認証システム | QR打刻、HRスナップショット同期、部門権限管理 | Docker Composeでローカル実行 | [詳細](#qr-attendance-authorization-demo) |
-| 備品予約システム | 予約、承認、貸出・返却、競合制御 | Docker Composeでローカル実行 | [詳細](#equipment-reservation-demo) |
+| QR勤怠認証システム | QR打刻、HRスナップショット同期、部門権限管理 | ローカル実行・操作デモGIFあり（ライブ公開準備中） | [詳細](#qr-attendance-authorization-demo) |
+| 備品予約システム | 予約、承認、貸出・返却、競合制御 | ローカル実行・操作デモGIFあり（ライブ公開準備中） | [詳細](#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | 条件別の候補整理と実質費用比較 | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) | [詳細](#mobile-carrier-comparison) |
 | 四国旅行 Folium 地図 | 四国の訪問候補地を地図に表示 | [公開ページ](https://fujishusuke1215-alt.github.io/shikoku-folium-map/) | [詳細](#shikoku-folium-map) |
 | Burnside の pq 定理 | 有限群論・表現論のLaTeX文書 | LaTeXソース・PDFを公開 | [詳細](#burnside-pq-theorem) |
-| Dense Optical Flow | Farneback法による動被写体領域の抽出 | Pythonソースを公開 | [詳細](#dense-optical-flow-analysis) |
+| Dense Optical Flow | Farneback法による動被写体領域の抽出 | Pythonソース・処理結果GIFあり | [詳細](#dense-optical-flow-analysis) |
 | Todoist ゴミ出し当番自動化 | GASとTodoist・Googleサービスの連携 | Apps Scriptソースを公開 | [詳細](#todoist-garbage-duty-automation) |
 
 ## QR Attendance Authorization Demo
@@ -29,6 +29,10 @@
 
 **試す:** リポジトリのルートで `docker compose up --build` を実行し、`http://localhost:5173` を開きます。管理者・マネージャー・社員の架空ユーザーを選んで操作します。実サービスのHRへの接続や、Entra IDの実アカウントでのログインは行いません。
 
+以下はローカル環境で実際に操作した記録です。
+
+![QR勤怠認証システムの操作デモ](./assets/qr_attendance_demo.gif)
+
 **関連資料:** [ソースコード・起動手順](https://github.com/fujishusuke1215-alt/qr-attendance-authorization-demo)、[機能対応表](https://github.com/fujishusuke1215-alt/qr-attendance-authorization-demo/blob/main/docs/FEATURE_MATRIX.md)、[設計判断](https://github.com/fujishusuke1215-alt/qr-attendance-authorization-demo/blob/main/docs/DESIGN.md)、[OpenAPI](https://github.com/fujishusuke1215-alt/qr-attendance-authorization-demo/blob/main/docs/openapi.yaml)。ホストされたライブデモは準備中です。
 
 ## Equipment Reservation Demo
@@ -45,6 +49,10 @@
 **技術:** Rust、Axum、SQLx、PostgreSQL、React、Vite、TypeScript、Docker Compose。
 
 **試す:** リポジトリのルートで `docker compose up --build` を実行し、`http://localhost:8080` を開きます。ローカル用のメンバーまたは管理者デモログインを選びます。
+
+以下はローカル環境で実際に操作した記録です。
+
+![備品予約システムの操作デモ](./assets/equipment_reservation_demo.gif)
 
 **関連資料:** [ソースコード・起動手順](https://github.com/fujishusuke1215-alt/equipment-reservation-demo)、[OpenAPI](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/openapi.yaml)、[予約整合性の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0001-reservation-integrity.md)、[認証と状態遷移の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0002-demo-auth-and-lifecycle.md)。ホストされたライブデモは準備中です。
 
@@ -102,7 +110,9 @@
 
 **実行方法:** `pip install -r requirements.txt` の後、権利と配布条件を確認した解析対象動画をリポジトリ直下に置き、`python src/01_moving_only.py` または `python src/02_moving_and_left.py` を実行します。終了は`q`または`Esc`です。
 
-**関連資料:** [ソースコードとREADME](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv)、[動領域の抽出コード](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv/blob/main/src/01_moving_only.py)、[左向き動領域の抽出コード](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv/blob/main/src/02_moving_and_left.py)。入力動画はリポジトリに含まれていないため、GIFの代わりに処理内容と実行コードを掲載しています。
+**関連資料:** [ソースコードとREADME](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv)、[動領域の抽出コード](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv/blob/main/src/01_moving_only.py)、[左向き動領域の抽出コード](https://github.com/fujishusuke1215-alt/dense-optical-flow-opencv/blob/main/src/02_moving_and_left.py)。
+
+![Dense Optical Flowの処理結果](./assets/optical_flow_demo.gif)
 
 ## Todoist Garbage Duty Automation
 
