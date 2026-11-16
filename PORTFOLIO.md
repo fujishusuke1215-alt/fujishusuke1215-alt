@@ -10,7 +10,7 @@
 | 備品予約システム | 予約、承認、貸出・返却、競合制御 | Docker Composeでローカル実行 | [詳細](#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | 条件別の候補整理と実質費用比較 | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) | [詳細](#mobile-carrier-comparison) |
 | 四国旅行 Folium 地図 | 四国の訪問候補地を地図に表示 | [公開ページ](https://fujishusuke1215-alt.github.io/shikoku-folium-map/) | [詳細](#shikoku-folium-map) |
-| Burnside の pq 定理 | 有限群論・表現論のLaTeX文書 | LaTeXソースを公開 | [詳細](#burnside-pq-theorem) |
+| Burnside の pq 定理 | 有限群論・表現論のLaTeX文書 | LaTeXソース・PDFを公開 | [詳細](#burnside-pq-theorem) |
 | Dense Optical Flow | Farneback法による動被写体領域の抽出 | Pythonソースを公開 | [詳細](#dense-optical-flow-analysis) |
 | Todoist ゴミ出し当番自動化 | GASとTodoist・Googleサービスの連携 | Apps Scriptソースを公開 | [詳細](#todoist-garbage-duty-automation) |
 
@@ -88,7 +88,7 @@
 
 **技術・分野:** LaTeX、AMS数学パッケージ、有限群論、表現論、指標論。
 
-**文書ソース:** [main.tex](https://github.com/fujishusuke1215-alt/burnside-pq-theorem/blob/main/main.tex)。コンパイルには`pdflatex main.tex`を複数回実行します。参考文献と公開用の整理範囲は[README](https://github.com/fujishusuke1215-alt/burnside-pq-theorem)および[REWRITE_REPORT.md](https://github.com/fujishusuke1215-alt/burnside-pq-theorem/blob/main/REWRITE_REPORT.md)にあります。現在のリポジトリにPDFファイルは含まれていないため、LaTeXソースを案内しています。
+**文書ソース:** [main.tex](https://github.com/fujishusuke1215-alt/burnside-pq-theorem/blob/main/main.tex)。コンパイルには`pdflatex main.tex`を複数回実行します。参考文献と公開用の整理範囲は[README](https://github.com/fujishusuke1215-alt/burnside-pq-theorem)および[REWRITE_REPORT.md](https://github.com/fujishusuke1215-alt/burnside-pq-theorem/blob/main/REWRITE_REPORT.md)にあります。[コンパイル済みPDF（61ページ）を見る](./assets/burnside_pq_theorem.pdf)。
 
 ## Dense Optical Flow Analysis
 
