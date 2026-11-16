@@ -7,7 +7,7 @@
 | プロジェクト | 概要 | 公開状態 | 詳細 |
 |---|---|---|---|
 | QR勤怠認証システム | QR打刻、HRスナップショット同期、部門権限管理 | ローカル実行・操作デモGIFあり（ライブ公開準備中） | [詳細](#qr-attendance-authorization-demo) |
-| 備品予約システム | 予約、承認、貸出・返却、競合制御 | ローカル実行・操作デモGIFあり（ライブ公開準備中） | [詳細](#equipment-reservation-demo) |
+| 備品予約システム | 予約、承認、貸出・返却、競合制御 | Renderで公開・動作確認済み、操作デモGIFあり | [詳細](#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | 条件別の候補整理と実質費用比較 | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) | [詳細](#mobile-carrier-comparison) |
 | 四国旅行 Folium 地図 | 四国の訪問候補地を地図に表示 | [公開ページ](https://fujishusuke1215-alt.github.io/shikoku-folium-map/) | [詳細](#shikoku-folium-map) |
 | Burnside の pq 定理 | 有限群論・表現論のLaTeX文書 | LaTeXソース・PDFを公開 | [詳細](#burnside-pq-theorem) |
@@ -54,7 +54,7 @@
 
 ![備品予約システムの操作デモ](./assets/equipment_reservation_demo.gif)
 
-**関連資料:** [ソースコード・起動手順](https://github.com/fujishusuke1215-alt/equipment-reservation-demo)、[OpenAPI](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/openapi.yaml)、[予約整合性の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0001-reservation-integrity.md)、[認証と状態遷移の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0002-demo-auth-and-lifecycle.md)。ホストされたライブデモは準備中です。
+**関連資料:** [ソースコード・起動手順](https://github.com/fujishusuke1215-alt/equipment-reservation-demo)、[OpenAPI](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/openapi.yaml)、[予約整合性の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0001-reservation-integrity.md)、[認証と状態遷移の設計判断](https://github.com/fujishusuke1215-alt/equipment-reservation-demo/blob/main/docs/adr/0002-demo-auth-and-lifecycle.md)。[ライブデモ（Render）](https://equipment-reservation-demo-ui.onrender.com/)（ブラウザーで動作確認済み）。
 
 ## Mobile Carrier Comparison
 
