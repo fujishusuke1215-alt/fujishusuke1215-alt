@@ -6,7 +6,7 @@
 
 | プロジェクト | 概要 | 公開状態 | 詳細 |
 |---|---|---|---|
-| 共有会計アプリ Hodoki | グループ全体・明細ごとの負担率で立替精算 | [公開ページ](https://hodoki-expense-sharing.starrybook7.chatgpt.site) | [詳細](#hodoki-expense-sharing) |
+| 共有会計アプリ Hodoki | 全体・明細別の負担率、複数回の累計、返金履歴 | [公開ページ](https://hodoki-expense-sharing.starrybook7.chatgpt.site) | [詳細](#hodoki-expense-sharing) |
 | QR勤怠認証システム | QR打刻、HRスナップショット同期、部門権限管理 | Renderで公開・動作確認済み、操作デモGIFあり | [詳細](#qr-attendance-authorization-demo) |
 | 備品予約システム | 予約、承認、貸出・返却、競合制御 | Renderで公開・動作確認済み、操作デモGIFあり | [詳細](#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | 条件別の候補整理と実質費用比較 | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) | [詳細](#mobile-carrier-comparison) |
@@ -21,7 +21,9 @@
 
 - グループ全体に適用する負担率を設定し、全体の支出を割合で配分
 - 特定の明細だけ個別の割合に上書き
-- 1円単位の端数調整、メンバー間の精算額と送金先を自動計算
+- 同じメンバーの旅行や集まりを複数回登録し、明細を回ごとに確認しながら累計残高を維持
+- 実際に送金した記録を支出と分離し、立替総額を変えずに次の精算額を更新
+- 1円単位の端数調整、送金履歴を反映した精算額と送金先を自動計算
 - グループURLから同じデータを閲覧・編集
 
 **技術:** Vinext、React、TypeScript、Cloudflare Workers、D1、Drizzle ORM。
