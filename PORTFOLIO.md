@@ -6,6 +6,7 @@
 
 | プロジェクト | 概要 | 公開状態 | 詳細 |
 |---|---|---|---|
+| 共有会計アプリ Hodoki | グループ全体・明細ごとの負担率で立替精算 | [公開ページ](https://hodoki-expense-sharing.starrybook7.chatgpt.site) | [詳細](#hodoki-expense-sharing) |
 | QR勤怠認証システム | QR打刻、HRスナップショット同期、部門権限管理 | Renderで公開・動作確認済み、操作デモGIFあり | [詳細](#qr-attendance-authorization-demo) |
 | 備品予約システム | 予約、承認、貸出・返却、競合制御 | Renderで公開・動作確認済み、操作デモGIFあり | [詳細](#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | 条件別の候補整理と実質費用比較 | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) | [詳細](#mobile-carrier-comparison) |
@@ -13,6 +14,21 @@
 | Burnside の pq 定理 | 有限群論・表現論のLaTeX文書 | LaTeXソース・PDFを公開 | [詳細](#burnside-pq-theorem) |
 | Dense Optical Flow | Farneback法による動被写体領域の抽出 | Pythonソース・処理結果GIFあり | [詳細](#dense-optical-flow-analysis) |
 | Todoist ゴミ出し当番自動化 | GASとTodoist・Googleサービスの連携 | Apps Scriptソースを公開 | [詳細](#todoist-garbage-duty-automation) |
+
+## Hodoki Expense Sharing
+
+**Hodoki（共有会計アプリ）** — グループの立替と、メンバーごとの負担割合を記録して精算額をまとめるWebアプリです。
+
+- グループ全体に適用する負担率を設定し、全体の支出を割合で配分
+- 特定の明細だけ個別の割合に上書き
+- 1円単位の端数調整、メンバー間の精算額と送金先を自動計算
+- グループURLから同じデータを閲覧・編集
+
+**技術:** Vinext、React、TypeScript、Cloudflare Workers、D1、Drizzle ORM。
+
+**公開ページ:** [Hodokiを開く](https://hodoki-expense-sharing.starrybook7.chatgpt.site)。ログインは不要です。グループURLを知っている人は会計を閲覧・編集できます。
+
+**ソースコード:** [GitHubリポジトリとREADME](https://github.com/fujishusuke1215-alt/hodoki-expense-sharing)。
 
 ## QR Attendance Authorization Demo
 
