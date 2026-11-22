@@ -14,6 +14,7 @@
 
 | プロジェクト | ソースコード | 動作確認・詳細 |
 |---|---|---|
+| 共有会計アプリ Hodoki | [ソースコード](https://github.com/fujishusuke1215-alt/hodoki-expense-sharing) | [公開ページ](https://hodoki-expense-sharing.starrybook7.chatgpt.site) |
 | QR勤怠認証システム（Entra ID対応） | [qr-attendance-authorization-demo](https://github.com/fujishusuke1215-alt/qr-attendance-authorization-demo) | [機能・起動方法](./PORTFOLIO.md#qr-attendance-authorization-demo) |
 | 備品予約システム | [equipment-reservation-demo](https://github.com/fujishusuke1215-alt/equipment-reservation-demo) | [機能・起動方法](./PORTFOLIO.md#equipment-reservation-demo) |
 | 携帯キャリア比較ガイド | [mobile-carrier-comparison](https://github.com/fujishusuke1215-alt/mobile-carrier-comparison) | [公開ページ](https://fujishusuke1215-alt.github.io/mobile-carrier-comparison/) |
